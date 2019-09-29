@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: darkgoldenrod">
+    <p><strong>Welcome to this rest API - this page help navigation - "swagger documantation page"</strong></p>
+    <br>
+    <p>------------------------------------------------------------------------</p>
+    <p><strong>Accounts data acces: </strong></p>
+    <p style="color: blue">get method for getting accounts. not giving page number/size returns a default of pagenumber:1 size:5. out of bound pagenumber returns whitelabel error with lowest sentance -> pagenumber is out of bound.</p>
+    <form action="/accounts" method="get" target="_blank">
+        <p>page number: <input type="number" name="page"> page size: <input type="number" name="size">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <p style="color: blue">Create account -> requires a user id, saldo is set to 0, iban/account id is auto generated and blocked is set to false.</p>
+    <form action="/account/create" method="post" target="_blank">
+        <p>user id: <input type="number" name="id">
+        <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <p style="color: blue">block account -> requires a account id -> sets field account.blocked to true </p>
+    <form action="/account/block" method="post" target="_blank">
+        <p>account id: <input type="number" name="id">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <p style="color: blue">delete account -> requires a account id -> deletes account from database collection</p>
+    <form action="/account/delete" method="post" target="_blank">
+        <p>account id: <input type="number" name="id">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <p style="color: blue">Add user to a account -> requires a account id and the users id -> adds usersId to the accounts usersList </p>
+    <form action="/account/addUser" method="post" target="_blank">
+        <p>account id: <input type="number" name="accountId"> users id: <input type="number" name="userId">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <p style="color: blue">Remove user from a account -> requires a account id and the users id -> adds usersId to the accounts usersList </p>
+    <form action="/account/removeUser" method="post" target="_blank">
+        <p>account id: <input type="number" name="accountId"> users id: <input type="number" name="userId">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <br>
+    <p>------------------------------------------------------------------------</p>
+    <p><strong>Users data acces: </strong></p>
+    <p><a href="/users" target="_blank">view all users</a></p>
+
+    <p style="color: blue">takes user id and returns the users accounts -> list of all the accounts the user is in</p>
+    <form action="/users/accounts" method="get" target="_blank">
+        <p>user id: <input type="number" name="id">
+            <input type="submit" value="submit">
+        </p>
+    </form>
+</body>
+</html>
