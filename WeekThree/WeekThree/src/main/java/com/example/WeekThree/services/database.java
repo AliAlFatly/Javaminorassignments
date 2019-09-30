@@ -39,6 +39,10 @@ public class database {
     }
 
     public String addUserToAccount(int accountId, int userId){
+        if (!userExists(userId)){
+            return "User: " + userId + " doesnt exist";
+        }
+
         for (int i = 0; i < accountsTable.size(); i++){
             if (accountsTable.get(i).getId() == accountId){
                return accountsTable.get(i).addUser(userId);
@@ -91,6 +95,14 @@ public class database {
         return id;
     }
 
+    public boolean userExists(int userId){
+        for (int i = 0; i < usersTable.size();i++){
+            if (usersTable.get(i).getUserId() == userId){
+                return true;
+            }
+        }
+        return false;
+    }
     //-----------------------------------------------    RANDOM GENERATORS TO CREATE DUMMY DATA - NOT PART OF THE ASSIGNMENT    -----------------------------------------------//
 
     private static ArrayList<users> generateUsers(int amount){
