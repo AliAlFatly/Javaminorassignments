@@ -78,7 +78,9 @@ public class databaseTest {
 
     @Test
     public void deleteAccountTest(){
-
+        assertEquals("Account: " + 15 + " doesnt exit" , db.deleteAccount(15));
+        db.createAccount(1); //account 15 created
+        assertEquals("Account: " + 15 + " has been deleted", db.deleteAccount(15));
     }
 
     @Test
