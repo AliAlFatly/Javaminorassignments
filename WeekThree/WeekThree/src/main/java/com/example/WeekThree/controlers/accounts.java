@@ -2,22 +2,30 @@ package com.example.WeekThree.controlers;
 
 import com.example.WeekThree.models.*;
 import com.example.WeekThree.services.*;
+
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.util.ArrayList;
 
 @RestController
+@EnableCaching
+@CacheConfig(cacheNames = {"FIRST_CACHE"})
 public class accounts {
 
     private database db = new database();
 
     //NOTE all put/delete are post becouse html doesnt support put/delete. if i were to use put/delete. swapping to put/delete is not that hard, replacing @PostMapping with @PutMapping/@DeleteMapping would do.
+    //NOTE cache is configured in CacheJavaConfig and put to 60 second expire time
+
 
     @GetMapping(value = "accounts")
     //added pagination -> note according to assignment only add pagination to accounts.
-    //cache 60 sec
+    @Cacheable(unless = "#result == null ")
     public ArrayList<account> accounts(@RequestParam(required = false) Integer page, @RequestParam(required = false) Integer size){
         page = page == null ? 1 : page;
         size = size == null ? 5 : size;
@@ -30,7 +38,7 @@ public class accounts {
     }
 
     @GetMapping("users")
-    //cache 60 sec
+    @Cacheable(unless = "#result == null ")
     public ArrayList<users> users(){
         return db.getUsersTable();
     }
@@ -66,7 +74,7 @@ public class accounts {
     }
 
     //return all accounts of a user
-    //cache 60 sec
+    @Cacheable(unless = "#result == null ")
     @GetMapping("users/accounts")
     public ArrayList<account> usersAccount(int id){
         return db.getUsersAccounts(id);
