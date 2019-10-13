@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="812c9e27-bb44-4a96-8b9f-ed8ac56a6a0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/controllers/accountsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/controllers/combiAccountsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/controllers/homeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/dao/AccountsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/dao/ChildAccountsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/dao/CombiAccountsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/Accounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/ChildAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/CombiAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/Dto/AccountsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/Dto/ChildAccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/models/Dto/CombiAccountsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/AOP/LoggingAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/AOP/TrackExecutionTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/CombiAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/IBANGeneratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/transformers/AccountsTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/transformers/ChildAccountsTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weekfive/services/transformers/CombiAccountsTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/views/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/weekfive/AccountServicesTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1S1H9F2ANeQZcdlkryy01XdU1cd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountServicesTest.deleteAccountTest">
+    <configuration name="AccountServicesTest.createAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weekfive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weekfive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.weekfive" />
+      <option name="MAIN_CLASS_NAME" value="com.example.weekfive.AccountServicesTest" />
+      <option name="METHOD_NAME" value="createAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServicesTest.deleteAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weekfive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weekfive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.weekfive" />
+      <option name="MAIN_CLASS_NAME" value="com.example.weekfive.AccountServicesTest" />
+      <option name="METHOD_NAME" value="deleteAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServicesTest.updateAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weekfive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weekfive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.weekfive" />
+      <option name="MAIN_CLASS_NAME" value="com.example.weekfive.AccountServicesTest" />
+      <option name="METHOD_NAME" value="updateAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombiAccountServicesTest.createAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weekfive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weekfive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.weekfive" />
+      <option name="MAIN_CLASS_NAME" value="com.example.weekfive.CombiAccountServicesTest" />
+      <option name="METHOD_NAME" value="createAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombiAccountServicesTest.getAllAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weekfive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.weekfive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.weekfive" />
+      <option name="MAIN_CLASS_NAME" value="com.example.weekfive.CombiAccountServicesTest" />
+      <option name="METHOD_NAME" value="getAllAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeekfiveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="weekfive" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.weekfive.WeekfiveApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountServicesTest.deleteAccountTest" />
+        <item itemvalue="JUnit.CombiAccountServicesTest.createAccountTest" />
+        <item itemvalue="JUnit.CombiAccountServicesTest.getAllAccountTest" />
+        <item itemvalue="JUnit.AccountServicesTest.createAccountTest" />
+        <item itemvalue="JUnit.AccountServicesTest.updateAccountTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="812c9e27-bb44-4a96-8b9f-ed8ac56a6a0c" name="Default Changelist" comment="" />
+      <created>1570724028835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570724028835</updated>
+      <workItem from="1570724030591" duration="667000" />
+      <workItem from="1570775175259" duration="1481000" />
+      <workItem from="1570872116632" duration="6147000" />
+      <workItem from="1570949906849" duration="28034000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
