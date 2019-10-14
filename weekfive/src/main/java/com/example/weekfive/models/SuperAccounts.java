@@ -7,11 +7,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 @MappedSuperclass
-@SequenceGenerator(initialValue = 10000001, name = "id")
+@TableGenerator(name="tab", initialValue=10000001, allocationSize=150)  //8 digits -> starts with 10000001 and goes up.
 public class SuperAccounts {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Range(min = 10000000, max = 999999999)    //8 digits
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "tab")
+    @Range(min = 10000000, max = 999999999) //value between 10000000 (8digits) and 999999999(max of 8 digits)
     protected int accountsNumber;
     @NotBlank(message = "name missing")
     protected String name;

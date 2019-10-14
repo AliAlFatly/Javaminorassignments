@@ -31,6 +31,7 @@ public class AccountsService {
         accounts1.setLastName(accounts.getLastName());
         accounts1.setName(accounts.getName());
         accounts1.setUserName(accounts.getUserName());
+        accounts1.setPassword(accounts.getPassword());
         accountsRepository.save(accounts1);
         return "Success";
     }
