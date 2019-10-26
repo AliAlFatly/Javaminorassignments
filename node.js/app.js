@@ -158,11 +158,7 @@ app.post("/loginCommit", urlencodedParser, (req, res) => {
 })
 
 app.get("/logout", (req, res) => {
-    req.session.id = null;
-    req.session.username = null;
-    req.session.returnMessage = null;
-    req.session.currentUser = null;
-    req.session.save()
+    req.session.destroy()
     console.log(req.session.id)
     let day = date_ob.getDate();
     let year = date_ob.getFullYear;
